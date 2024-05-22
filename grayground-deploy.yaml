@@ -18,7 +18,7 @@ spec:
         app: grayground
     spec:
       containers:
-      - image: wooosik/grayground:v1.0
+      - image: wooosik/grayground:v2.0
         name: grayground
         ports:
         - containerPort: 80
