@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: grayground
+  name: grayground
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grayground
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: grayground
+    spec:
+      containers:
+      - image: wooosik/grayground:v1.0
+        name: grayground
+        ports:
+        - containerPort: 80
+        resources: {}
+status: {}
